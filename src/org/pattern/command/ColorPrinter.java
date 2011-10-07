@@ -26,35 +26,24 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This command encapsulates all black and white prints.
+ * This class represents color printers.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class BlackWhitePrintCommand implements IPrintCommand {
+public class ColorPrinter {
 
 	/**
-	 * The printer to address.
-	 */
-	private BlackWhitePrinter bwPrinter;
-	
-	/**
-	 * 
-	 * Creates a new BlackWhitePrintCommand.
+	 * Prints the given document.
 	 *
-	 * @param bwPrinter The printer to address.
+	 * @param document
 	 */
-	public BlackWhitePrintCommand(BlackWhitePrinter bwPrinter) {
-		this.bwPrinter = bwPrinter;
-	}
-	
-	@Override
-	public void ausfuehren(String document) {
-		bwPrinter.configure();
-		bwPrinter.print(document);
+	public void print(String document) {
+		// ESCA-JAVA0266:
+		System.out.println(document.toUpperCase());
 	}
 
 }

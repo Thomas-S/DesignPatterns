@@ -26,34 +26,31 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This commmand encapsulates all colored prints.
+ * This class represents pdf printers.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColorPrintCommand implements IPrintCommand {
-
-	/**
-	 * The printer to address.
-	 */
-	private ColorPrinter cPrinter;
+public class PDFPrinter {
 	
 	/**
-	 * 
-	 * Creates a new ColorWhitePrintCommand.
-	 *
-	 * @param cPrinter The printer to address.
+	 * Configures output properties the pdf printer.
 	 */
-	public ColorPrintCommand(ColorPrinter cPrinter) {
-		this.cPrinter = cPrinter;
+	public void configureOutput() {
+		
 	}
 	
-	@Override
-	public void ausfuehren(String document) {
-		cPrinter.print(document);
+	/**
+	 * Prints the given document.
+	 *
+	 * @param document
+	 */
+	public void print(String document) {
+		// ESCA-JAVA0266:
+		System.out.println("PDF: "+document);
 	}
 
 }

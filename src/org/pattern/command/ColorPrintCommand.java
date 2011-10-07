@@ -26,24 +26,34 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This class represents color printers.
+ * This commmand encapsulates all colored prints.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColorPrinter {
+public class ColorPrintCommand implements IPrintCommand {
 
 	/**
-	 * Prints the given document.
-	 *
-	 * @param document
+	 * The printer to address.
 	 */
-	public void print(String document) {
-		// ESCA-JAVA0266:
-		System.out.println(document.toUpperCase());
+	private ColorPrinter cPrinter;
+	
+	/**
+	 * 
+	 * Creates a new ColorWhitePrintCommand.
+	 *
+	 * @param cPrinter The printer to address.
+	 */
+	public ColorPrintCommand(ColorPrinter cPrinter) {
+		this.cPrinter = cPrinter;
+	}
+	
+	@Override
+	public void ausfuehren(String document) {
+		cPrinter.print(document);
 	}
 
 }

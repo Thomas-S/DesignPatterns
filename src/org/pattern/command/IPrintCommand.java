@@ -26,35 +26,22 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This command encapsulates all pdf prints.
+ * This interface abstracts from all print orders
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class PDFPrintCommand implements IPrintCommand {
+public interface IPrintCommand {
 
 	/**
-	 * The printer to address.
-	 */
-	private PDFPrinter pdfPrinter;
-	
-	/**
+	 * Every print command encapsulates the execution logic and the addressed printer.
 	 * 
-	 * Creates a new PDFPrintCommand.
-	 *
-	 * @param pdfPrinter The printer to address.
+	 * @param document
+	 *            The document to print.
 	 */
-	public PDFPrintCommand(PDFPrinter pdfPrinter) {
-		this.pdfPrinter = pdfPrinter;
-	}
-	
-	@Override
-	public void ausfuehren(String document) {
-		pdfPrinter.configureOutput();
-		pdfPrinter.print(document);
-	}
+	void ausfuehren(String document);
 
 }

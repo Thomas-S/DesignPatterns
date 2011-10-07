@@ -26,47 +26,35 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * 
- * This class represents an example client.
- * 
+ * This command encapsulates all black and white prints.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class BlackWhitePrintCommand implements IPrintCommand {
 
-	private Client() {
-		
-	}
+	/**
+	 * The printer to address.
+	 */
+	private BlackWhitePrinter bwPrinter;
 	
 	/**
-	 * The main method.
 	 * 
-	 * @param args
+	 * Creates a new BlackWhitePrintCommand.
+	 *
+	 * @param bwPrinter The printer to address.
 	 */
-	public static void main(String[] args) {
-		/*
-		 * Initial configuration:
-		 */
-		
-		// Create printer
-		BlackWhitePrinter bwp = new BlackWhitePrinter();
-		ColorPrinter cp = new ColorPrinter();
-		PDFPrinter pdfp = new PDFPrinter();
-		
-		// Create invoker
-		LabAssistant la = new LabAssistant(new BlackWhitePrintCommand(bwp));
-		
-		// Usage
-		la.invokePrint("Command pattern is awwwesome!");
+	public BlackWhitePrintCommand(BlackWhitePrinter bwPrinter) {
+		this.bwPrinter = bwPrinter;
+	}
 	
-		la.setPrintCommand(new ColorPrintCommand(cp));
-		la.invokePrint("This is a colored print.");
-		
-		la.setPrintCommand(new PDFPrintCommand(pdfp));
-		la.invokePrint("Protected Document Format.");
+	@Override
+	public void ausfuehren(String document) {
+		bwPrinter.configure();
+		bwPrinter.print(document);
 	}
 
 }

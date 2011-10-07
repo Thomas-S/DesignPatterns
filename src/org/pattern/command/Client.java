@@ -26,22 +26,47 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This interface abstracts from all print orders
- *
+ * 
+ * This class represents an example client.
+ * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public interface IPrintCommand {
+public class Client {
 
+	private Client() {
+		
+	}
+	
 	/**
-	 * Every print command encapsulates the execution logic and the addressed printer.
+	 * The main method.
 	 * 
-	 * @param document
-	 *            The document to print.
+	 * @param args
 	 */
-	void ausfuehren(String document);
+	public static void main(String[] args) {
+		/*
+		 * Initial configuration:
+		 */
+		
+		// Create printer
+		BlackWhitePrinter bwp = new BlackWhitePrinter();
+		ColorPrinter cp = new ColorPrinter();
+		PDFPrinter pdfp = new PDFPrinter();
+		
+		// Create invoker
+		LabAssistant la = new LabAssistant(new BlackWhitePrintCommand(bwp));
+		
+		// Usage
+		la.invokePrint("Command pattern is awwwesome!");
+	
+		la.setPrintCommand(new ColorPrintCommand(cp));
+		la.invokePrint("This is a colored print.");
+		
+		la.setPrintCommand(new PDFPrintCommand(pdfp));
+		la.invokePrint("Protected Document Format.");
+	}
 
 }

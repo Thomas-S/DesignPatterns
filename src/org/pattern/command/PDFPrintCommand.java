@@ -26,31 +26,35 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.command.concrete;
+package org.pattern.command;
 
 /**
- * This class represents black/white printers.
+ * This command encapsulates all pdf prints.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class BlackWhitePrinter {
+public class PDFPrintCommand implements IPrintCommand {
 
 	/**
-	 * Configures the printer.
+	 * The printer to address.
 	 */
-	public void configure() {
-		// optional
-	}
-
+	private PDFPrinter pdfPrinter;
+	
 	/**
-	 * Prints the given document.
+	 * 
+	 * Creates a new PDFPrintCommand.
 	 *
-	 * @param document
+	 * @param pdfPrinter The printer to address.
 	 */
-	public void print(String document) {
-		// ESCA-JAVA0266:
-		System.out.println(document);
+	public PDFPrintCommand(PDFPrinter pdfPrinter) {
+		this.pdfPrinter = pdfPrinter;
+	}
+	
+	@Override
+	public void ausfuehren(String document) {
+		pdfPrinter.configureOutput();
+		pdfPrinter.print(document);
 	}
 
 }
