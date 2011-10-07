@@ -10,7 +10,7 @@
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_85wE4PDaEeCGFuRx1k5Wkg" name="Receiver" description=" (e.g. PDFPrinter)" query="class_with_members('org.pattern.command.concrete','ColorPrinter')&#xA; or class_with_members('org.pattern.command.concrete','PDFPrinter')&#xA; or class_with_members('org.pattern.command.concrete','BlackWhitePrinter')&#xA;"/>
     <shapes xmi:type="Ensemble" xmi:id="_Xqnp4PDcEeCGFuRx1k5Wkg" name="Client" description=" (Main Application)" query="class_with_members('org.pattern.command.concrete','Client')&#xA;">
-      <targetConnections xmi:type="Outgoing" xmi:id="_eztMcPDcEeCGFuRx1k5Wkg" source="_Xqnp4PDcEeCGFuRx1k5Wkg" target="_2JVhAPDaEeCGFuRx1k5Wkg" name="create, call"/>
+      <targetConnections xmi:type="Outgoing" xmi:id="_eztMcPDcEeCGFuRx1k5Wkg" source="_Xqnp4PDcEeCGFuRx1k5Wkg" target="_2JVhAPDaEeCGFuRx1k5Wkg"/>
     </shapes>
   </ShapesDiagram>
   <notation:Diagram xmi:id="_0RcyUPDaEeCGFuRx1k5Wkg" type="Vespucci" element="_0QX0QfDaEeCGFuRx1k5Wkg" name="Command_Concrete.sad" measurementUnit="Pixel">
@@ -65,7 +65,7 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_XqpfFPDcEeCGFuRx1k5Wkg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_XqpfFfDcEeCGFuRx1k5Wkg"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xqo4AfDcEeCGFuRx1k5Wkg" x="30" y="280" width="111"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xqo4AfDcEeCGFuRx1k5Wkg" x="30" y="285" width="111"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_0RcyUfDaEeCGFuRx1k5Wkg"/>
     <edges xmi:type="notation:Edge" xmi:id="_zlOwEPDbEeCGFuRx1k5Wkg" type="4003" element="_zlJQgPDbEeCGFuRx1k5Wkg" source="_2JhuQPDaEeCGFuRx1k5Wkg" target="_4QA5oPDaEeCGFuRx1k5Wkg">
