@@ -19,7 +19,7 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_hxZc4_DtEeCxzJOmOO1FvA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_hxZc5PDtEeCxzJOmOO1FvA"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hxYOwfDtEeCxzJOmOO1FvA" x="75" y="55" width="96" height="86"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hxYOwfDtEeCxzJOmOO1FvA" x="45" y="55" width="96" height="86"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_iuZ3sPDtEeCxzJOmOO1FvA" type="2001" element="_iuYCgPDtEeCxzJOmOO1FvA" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_iuaewPDtEeCxzJOmOO1FvA" type="5001"/>
@@ -42,7 +42,7 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_iuaexPDtEeCxzJOmOO1FvA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_iuaexfDtEeCxzJOmOO1FvA"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iuZ3sfDtEeCxzJOmOO1FvA" x="285" y="55" width="141" height="206"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iuZ3sfDtEeCxzJOmOO1FvA" x="255" y="55" width="141" height="206"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_jNPIwPDtEeCxzJOmOO1FvA" type="2001" element="_jNNTkPDtEeCxzJOmOO1FvA" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_jNPv0PDtEeCxzJOmOO1FvA" type="5001"/>
@@ -52,7 +52,19 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_jNPv1PDtEeCxzJOmOO1FvA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_jNPv1fDtEeCxzJOmOO1FvA"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jNPIwfDtEeCxzJOmOO1FvA" x="505" y="55" width="101" height="86"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jNPIwfDtEeCxzJOmOO1FvA" x="475" y="55" width="101" height="86"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_9zIAAPj1EeC0q6-8zwqD2w" type="Note" fontName="Segoe UI" description="Very similar to the command pattern." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_9zKcQPj1EeC0q6-8zwqD2w" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_9zKcQfj1EeC0q6-8zwqD2w" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_9zIAAfj1EeC0q6-8zwqD2w"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_9zIAAvj1EeC0q6-8zwqD2w"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9zIAA_j1EeC0q6-8zwqD2w" x="145" y="170" width="86" height="76"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_gNGYkfDtEeCxzJOmOO1FvA"/>
     <edges xmi:type="notation:Edge" xmi:id="_rsTm0PDtEeCxzJOmOO1FvA" type="4004" element="_rsRKkPDtEeCxzJOmOO1FvA" source="_hxYOwPDtEeCxzJOmOO1FvA" target="_jNPIwPDtEeCxzJOmOO1FvA">
