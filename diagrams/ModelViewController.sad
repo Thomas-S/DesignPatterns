@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_w7BfofaZEeCF1NOFLeyzlQ">
-    <shapes xmi:type="Ensemble" xmi:id="_zO5mwPaZEeCF1NOFLeyzlQ" name="View" description="A graphical representation of the model and the program logic."/>
+    <shapes xmi:type="Ensemble" xmi:id="_zO5mwPaZEeCF1NOFLeyzlQ" name="View" description="A graphical representation of the model and the program logic.">
+      <targetConnections xmi:type="NotAllowed" xmi:id="_F1SwgfnDEeCAHdL0tXdlcg" source="_zO5mwPaZEeCF1NOFLeyzlQ" target="_2ghIifaZEeCF1NOFLeyzlQ"/>
+    </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_2ghIifaZEeCF1NOFLeyzlQ" name="Controller" description="Propagation of changes caused by the user or by evaluation at the level of the model.&#xD;&#xA;The program logic can be implemented here.">
       <targetConnections xmi:type="Outgoing" xmi:id="_UYxCEPj0EeC0q6-8zwqD2w" source="_2ghIifaZEeCF1NOFLeyzlQ" target="_zO5mwPaZEeCF1NOFLeyzlQ" name="call, field_access"/>
       <targetConnections xmi:type="Outgoing" xmi:id="_Ya8eEPj0EeC0q6-8zwqD2w" source="_2ghIifaZEeCF1NOFLeyzlQ" target="_3W0eafaZEeCF1NOFLeyzlQ" name="call, field_access"/>
@@ -64,7 +66,7 @@
       <styles xmi:type="notation:TextStyle" xmi:id="_1iCJAfj0EeC0q6-8zwqD2w"/>
       <styles xmi:type="notation:LineTypeStyle" xmi:id="_1iCJAvj0EeC0q6-8zwqD2w"/>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1iCJA_j0EeC0q6-8zwqD2w" x="300" y="200" width="111" height="96"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1iCJA_j0EeC0q6-8zwqD2w" x="190" y="330" width="236" height="51"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_T2j3cPj1EeC0q6-8zwqD2w" type="Note" fontName="Segoe UI" description="The model must not depend on any component." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
       <children xmi:type="notation:BasicDecorationNode" xmi:id="_T2mTsPj1EeC0q6-8zwqD2w" type="DiagramName">
@@ -77,6 +79,30 @@
       <styles xmi:type="notation:LineTypeStyle" xmi:id="_T2j3cvj1EeC0q6-8zwqD2w"/>
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2j3c_j1EeC0q6-8zwqD2w" x="390" y="70" width="106" height="81"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_rXO98PltEeCa7uPkkZIPVg" type="Note" fontName="Segoe UI" description="CAUTION: Exclusive meaning of incoming and outgoing." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_rXO98fltEeCa7uPkkZIPVg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_rXO98vltEeCa7uPkkZIPVg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_rXO98_ltEeCa7uPkkZIPVg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_rXO99PltEeCa7uPkkZIPVg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXO99fltEeCa7uPkkZIPVg" x="630" y="305" width="191" height="126"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_K2ojcPnDEeCAHdL0tXdlcg" type="Note" fontName="Segoe UI" description="In a sharp sense, the view should not manipulate the controller" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_K2pxkPnDEeCAHdL0tXdlcg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_K2qYoPnDEeCAHdL0tXdlcg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_K2ojcfnDEeCAHdL0tXdlcg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_K2ojcvnDEeCAHdL0tXdlcg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K2ojc_nDEeCAHdL0tXdlcg" x="210" y="205" width="206" height="51"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_w9ZeMfaZEeCF1NOFLeyzlQ"/>
     <edges xmi:type="notation:Edge" xmi:id="_WiQ6oPjzEeC0q6-8zwqD2w" type="4004" element="_Wh9YofjzEeC0q6-8zwqD2w" source="_3W0eYfaZEeCF1NOFLeyzlQ" target="_zPDXwPaZEeCF1NOFLeyzlQ">
@@ -117,6 +143,16 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ya_hY_j0EeC0q6-8zwqD2w" points="[-6, -32, -69, 152]$[-6, -177, -69, 7]$[59, -177, -4, 7]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YbLHkPj0EeC0q6-8zwqD2w" id="(0.9315068493150684,0.23529411764705882)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YbLHkfj0EeC0q6-8zwqD2w" id="(0.0273972602739726,0.4632352941176471)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_F1fk0PnDEeCAHdL0tXdlcg" type="4004" element="_F1SwgfnDEeCAHdL0tXdlcg" source="_zPDXwPaZEeCF1NOFLeyzlQ" target="_2ghIgfaZEeCF1NOFLeyzlQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_F1gL4PnDEeCAHdL0tXdlcg" type="6004">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_F1gy8PnDEeCAHdL0tXdlcg" x="-7" y="-7"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_F1fk0fnDEeCAHdL0tXdlcg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_F1fk0vnDEeCAHdL0tXdlcg" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F1fk0_nDEeCAHdL0tXdlcg" points="[-14, -9, 277, 0]$[-263, -9, 28, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F1xRoPnDEeCAHdL0tXdlcg" id="(0.0958904109589041,0.2867647058823529)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F1x4sPnDEeCAHdL0tXdlcg" id="(0.8082191780821918,0.22058823529411764)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

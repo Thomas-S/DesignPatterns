@@ -66,6 +66,30 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9zIAA_j1EeC0q6-8zwqD2w" x="145" y="170" width="86" height="76"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_8jXvQPlsEeCa7uPkkZIPVg" type="Note" fontName="Segoe UI" description="Facade usually returns something." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_8jjVcPlsEeCa7uPkkZIPVg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_8jj8gPlsEeCa7uPkkZIPVg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_8jXvQflsEeCa7uPkkZIPVg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_8jXvQvlsEeCa7uPkkZIPVg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8jXvQ_lsEeCa7uPkkZIPVg" x="98" y="315" width="206" height="31"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_nUsVkPltEeCa7uPkkZIPVg" type="Note" fontName="Segoe UI" description="CAUTION: Exclusive meaning of incoming and outgoing." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nUv_8PltEeCa7uPkkZIPVg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nUwnAPltEeCa7uPkkZIPVg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_nUsVkfltEeCa7uPkkZIPVg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_nUsVkvltEeCa7uPkkZIPVg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nUsVk_ltEeCa7uPkkZIPVg" x="325" y="310" width="191" height="46"/>
+    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_gNGYkfDtEeCxzJOmOO1FvA"/>
     <edges xmi:type="notation:Edge" xmi:id="_rsTm0PDtEeCxzJOmOO1FvA" type="4004" element="_rsRKkPDtEeCxzJOmOO1FvA" source="_hxYOwPDtEeCxzJOmOO1FvA" target="_jNPIwPDtEeCxzJOmOO1FvA">
       <children xmi:type="notation:DecorationNode" xmi:id="_rsUN4PDtEeCxzJOmOO1FvA" type="6004">

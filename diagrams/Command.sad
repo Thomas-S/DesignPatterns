@@ -79,7 +79,7 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogvng_j1EeC0q6-8zwqD2w" x="80" y="25" width="176" height="51"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_1nolQPj1EeC0q6-8zwqD2w" type="Note" fontName="Segoe UI" description="The complexity of a command may not be resttricted." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:Shape" xmi:id="_1nolQPj1EeC0q6-8zwqD2w" type="Note" fontName="Segoe UI" description="The complexity of a command may not be restricted." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
       <children xmi:type="notation:BasicDecorationNode" xmi:id="_1nolQfj1EeC0q6-8zwqD2w" type="DiagramName">
         <element xsi:nil="true"/>
       </children>
@@ -90,6 +90,30 @@
       <styles xmi:type="notation:LineTypeStyle" xmi:id="_1nolRPj1EeC0q6-8zwqD2w"/>
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1nolRfj1EeC0q6-8zwqD2w" x="335" y="30" width="186" height="51"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_c-8CsPltEeCa7uPkkZIPVg" type="Note" fontName="Segoe UI" description="Constraints between Receiver and Client should be lessened." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_c-_tEPltEeCa7uPkkZIPVg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_c-_tEfltEeCa7uPkkZIPVg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_c-8CsfltEeCa7uPkkZIPVg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_c-8CsvltEeCa7uPkkZIPVg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c-8Cs_ltEeCa7uPkkZIPVg" x="335" y="365" width="241" height="46"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ql_uQPltEeCa7uPkkZIPVg" type="Note" fontName="Segoe UI" description="CAUTION: Exclusive meaning of incoming and outgoing." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_ql_uQfltEeCa7uPkkZIPVg" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_ql_uQvltEeCa7uPkkZIPVg" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:TextStyle" xmi:id="_ql_uQ_ltEeCa7uPkkZIPVg"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_ql_uRPltEeCa7uPkkZIPVg"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ql_uRfltEeCa7uPkkZIPVg" x="135" y="365" width="191" height="46"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_0RcyUfDaEeCGFuRx1k5Wkg"/>
     <edges xmi:type="notation:Edge" xmi:id="_zlOwEPDbEeCGFuRx1k5Wkg" type="4003" element="_zlJQgPDbEeCGFuRx1k5Wkg" source="_2JhuQPDaEeCGFuRx1k5Wkg" target="_4QA5oPDaEeCGFuRx1k5Wkg">
@@ -118,8 +142,8 @@
       </children>
       <styles xmi:type="notation:RoutingStyle" xmi:id="_7aZVgfDbEeCGFuRx1k5Wkg"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_7aZVgvDbEeCGFuRx1k5Wkg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7aZVg_DbEeCGFuRx1k5Wkg" points="[0, 48, -353, 80]$[0, 256, -353, 288]$[362, 256, 9, 288]$[362, 115, 9, 147]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7ap0MPDbEeCGFuRx1k5Wkg" id="(0.9716981132075472,0.4418604651162791)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7aZVg_DbEeCGFuRx1k5Wkg" points="[0, 63, -368, 79]$[0, 243, -368, 259]$[375, 243, 7, 259]$[375, 130, 7, 146]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7ap0MPDbEeCGFuRx1k5Wkg" id="(0.9245283018867925,0.26744186046511625)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7ap0MfDbEeCGFuRx1k5Wkg" id="(0.3262411347517731,0.0457516339869281)"/>
     </edges>
     <edges xmi:type="notation:Edge" xmi:id="_ezuakPDcEeCGFuRx1k5Wkg" type="4003" element="_eztMcPDcEeCGFuRx1k5Wkg" source="_Xqo4APDcEeCGFuRx1k5Wkg" target="_2JhuQPDaEeCGFuRx1k5Wkg">
