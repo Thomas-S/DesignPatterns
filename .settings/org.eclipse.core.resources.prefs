@@ -1,5 +1,12 @@
-#Fri Oct 14 21:21:50 CEST 2011
+#Thu Oct 27 15:50:58 CEST 2011
 eclipse.preferences.version=1
 encoding//diagrams/Command.sad=UTF-8
+encoding//diagrams/ExpectedSemantic.sad=UTF-8
 encoding//diagrams/Facade.sad=UTF-8
+encoding//diagrams/GlobalIncomingSemantic.sad=UTF-8
+encoding//diagrams/GlobalOutgoingSemantic.sad=UTF-8
+encoding//diagrams/InAndOutSemantic.sad=UTF-8
+encoding//diagrams/IncomingSemantic.sad=UTF-8
 encoding//diagrams/ModelViewController.sad=UTF-8
+encoding//diagrams/NotAllowedSemantic.sad=UTF-8
+encoding//diagrams/OutgoingSemantic.sad=UTF-8
