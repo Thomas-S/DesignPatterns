@@ -5,7 +5,6 @@
       <targetConnections xmi:type="NotAllowed" xmi:id="_X2bMYACiEeGuArjUBJdN7A" source="_WZhwkACiEeGuArjUBJdN7A" target="_WZhwkgCiEeGuArjUBJdN7A"/>
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_WZhwkgCiEeGuArjUBJdN7A" name="Target"/>
-    <shapes xmi:type="Ensemble" xmi:id="_WZhwkwCiEeGuArjUBJdN7A" name="Other"/>
   </ShapesDiagram>
   <notation:Diagram xmi:id="_UjNIIQCiEeGuArjUBJdN7A" type="Vespucci" element="_UjNIIACiEeGuArjUBJdN7A" name="NotAllowedSemantic.sad" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_WZf7YACiEeGuArjUBJdN7A" type="2001" element="_WZhwkACiEeGuArjUBJdN7A" fontName="Segoe UI">
@@ -27,16 +26,6 @@
         <styles xmi:type="notation:FilteringStyle" xmi:id="_WZgidgCiEeGuArjUBJdN7A"/>
       </children>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WZgidwCiEeGuArjUBJdN7A" x="310" y="105" width="71" height="61"/>
-    </children>
-    <children xmi:type="notation:Shape" xmi:id="_WZhJgACiEeGuArjUBJdN7A" type="2001" element="_WZhwkwCiEeGuArjUBJdN7A" fontName="Segoe UI">
-      <children xmi:type="notation:DecorationNode" xmi:id="_WZhJgQCiEeGuArjUBJdN7A" type="5001"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_WZhJggCiEeGuArjUBJdN7A" type="5008"/>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_WZhJgwCiEeGuArjUBJdN7A" type="7001"/>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_WZhJhACiEeGuArjUBJdN7A" type="7003" collapsed="true">
-        <styles xmi:type="notation:SortingStyle" xmi:id="_WZhJhQCiEeGuArjUBJdN7A"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_WZhJhgCiEeGuArjUBJdN7A"/>
-      </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WZhJhwCiEeGuArjUBJdN7A" x="215" y="150" width="66" height="61"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_UjNIIgCiEeGuArjUBJdN7A"/>
     <edges xmi:type="notation:Edge" xmi:id="_X2dooACiEeGuArjUBJdN7A" type="4004" element="_X2bMYACiEeGuArjUBJdN7A" source="_WZf7YACiEeGuArjUBJdN7A" target="_WZgicACiEeGuArjUBJdN7A">
