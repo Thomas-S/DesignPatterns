@@ -30,7 +30,7 @@
     <styles xmi:type="notation:DiagramStyle" xmi:id="_1F6a0gChEeGuArjUBJdN7A"/>
     <edges xmi:type="notation:Edge" xmi:id="_OFbMYACiEeGuArjUBJdN7A" type="4002" element="_OFZXMACiEeGuArjUBJdN7A" source="_MudZcQCiEeGuArjUBJdN7A" target="_MueAgACiEeGuArjUBJdN7A">
       <children xmi:type="notation:DecorationNode" xmi:id="_OFbzcACiEeGuArjUBJdN7A" type="6002">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_OFbzcQCiEeGuArjUBJdN7A" x="-7" y="-7"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_OFbzcQCiEeGuArjUBJdN7A" x="-3" y="8"/>
       </children>
       <styles xmi:type="notation:RoutingStyle" xmi:id="_OFbMYQCiEeGuArjUBJdN7A"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_OFbMYgCiEeGuArjUBJdN7A" fontName="Segoe UI"/>

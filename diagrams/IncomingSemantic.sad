@@ -2,13 +2,13 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_HTIrIQCgEeGuArjUBJdN7A">
     <shapes xmi:type="Ensemble" xmi:id="_JZHgMACgEeGuArjUBJdN7A" name="Source_1">
-      <targetConnections xmi:type="Incoming" xmi:id="_PZqtYACgEeGuArjUBJdN7A" source="_JZHgMACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A"/>
+      <targetConnections xmi:type="Incoming" xmi:id="_PZqtYACgEeGuArjUBJdN7A" source="_JZHgMACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A" name="create"/>
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_KlvrYACgEeGuArjUBJdN7A" name="Source_2">
-      <targetConnections xmi:type="Incoming" xmi:id="_QFlYMACgEeGuArjUBJdN7A" source="_KlvrYACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A" name="create"/>
+      <targetConnections xmi:type="Incoming" xmi:id="_QFlYMACgEeGuArjUBJdN7A" source="_KlvrYACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A" name="read_field"/>
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_LQuiEACgEeGuArjUBJdN7A" name="Source_3" description="">
-      <targetConnections xmi:type="Incoming" xmi:id="_QmMx8ACgEeGuArjUBJdN7A" source="_LQuiEACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A" name="field_access"/>
+      <targetConnections xmi:type="Incoming" xmi:id="_QmMx8ACgEeGuArjUBJdN7A" source="_LQuiEACgEeGuArjUBJdN7A" target="_OLwv0ACgEeGuArjUBJdN7A" name="write_field"/>
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_OLwv0ACgEeGuArjUBJdN7A" name="Target"/>
     <shapes xmi:type="Ensemble" xmi:id="_XgcAMACgEeGuArjUBJdN7A" name="Other"/>
@@ -77,7 +77,7 @@
     </edges>
     <edges xmi:type="notation:Edge" xmi:id="_QFnNYACgEeGuArjUBJdN7A" type="4005" element="_QFlYMACgEeGuArjUBJdN7A" source="_Klt2MACgEeGuArjUBJdN7A" target="_OLylAACgEeGuArjUBJdN7A">
       <children xmi:type="notation:DecorationNode" xmi:id="_QFn0cACgEeGuArjUBJdN7A" type="6005">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_QFn0cQCgEeGuArjUBJdN7A" x="-32" y="-12"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QFn0cQCgEeGuArjUBJdN7A" x="-27" y="-15"/>
       </children>
       <styles xmi:type="notation:RoutingStyle" xmi:id="_QFnNYQCgEeGuArjUBJdN7A"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_QFnNYgCgEeGuArjUBJdN7A" fontName="Segoe UI"/>
