@@ -1,4 +1,4 @@
-#Tue Nov 08 13:31:00 CET 2011
+#Sat Nov 19 20:46:43 CET 2011
 eclipse.preferences.version=1
 encoding//diagrams/AbstractFactory.sad=UTF-8
 encoding//diagrams/Command.sad=UTF-8
@@ -8,6 +8,7 @@ encoding//diagrams/GlobalIncomingSemantic.sad=UTF-8
 encoding//diagrams/GlobalOutgoingSemantic.sad=UTF-8
 encoding//diagrams/InAndOutSemantic.sad=UTF-8
 encoding//diagrams/IncomingSemantic.sad=UTF-8
+encoding//diagrams/KindShortcutExample.sad=UTF-8
 encoding//diagrams/ModelViewController.sad=UTF-8
 encoding//diagrams/NotAllowedSemantic.sad=UTF-8
 encoding//diagrams/OutgoingSemantic.sad=UTF-8
