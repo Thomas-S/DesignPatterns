@@ -92,7 +92,7 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXO99fltEeCa7uPkkZIPVg" x="630" y="305" width="191" height="126"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_K2ojcPnDEeCAHdL0tXdlcg" type="Note" fontName="Segoe UI" description="In a sharp sense, the view should not manipulate the controller" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:Shape" xmi:id="_K2ojcPnDEeCAHdL0tXdlcg" type="Note" fontName="Segoe UI" description="In a sharp sense, the view should not manipulate the controller." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
       <children xmi:type="notation:BasicDecorationNode" xmi:id="_K2pxkPnDEeCAHdL0tXdlcg" type="DiagramName">
         <element xsi:nil="true"/>
       </children>

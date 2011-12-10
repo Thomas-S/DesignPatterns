@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_hBE1IAoFEeGp3q9HwSFCMA">
     <shapes xmi:type="Ensemble" xmi:id="_hjzuwAoFEeGp3q9HwSFCMA" name="Singleton"/>
-    <shapes xmi:type="Ensemble" xmi:id="_tFH10AoFEeGp3q9HwSFCMA" name="Empty Ensemble" description=" This ensemble does not&#xD;&#xA; have any elements.">
+    <shapes xmi:type="Ensemble" xmi:id="_tFH10AoFEeGp3q9HwSFCMA" name="Empty_Ensemble" description=" This ensemble does&#xD;&#xA; not have any&#xD;&#xA; source elements.">
       <targetConnections xmi:type="GlobalIncoming" xmi:id="_5cEkYAoFEeGp3q9HwSFCMA" source="_tFH10AoFEeGp3q9HwSFCMA" target="_hjzuwAoFEeGp3q9HwSFCMA" name="create"/>
     </shapes>
   </ShapesDiagram>
@@ -15,7 +15,7 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_hj4nRAoFEeGp3q9HwSFCMA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_hj4nRQoFEeGp3q9HwSFCMA"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hj4AMQoFEeGp3q9HwSFCMA" x="165" y="110" width="106" height="91"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hj4AMQoFEeGp3q9HwSFCMA" x="5" y="10" width="106" height="91"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_tFJrAAoFEeGp3q9HwSFCMA" type="2001" element="_tFH10AoFEeGp3q9HwSFCMA" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_tFKSEAoFEeGp3q9HwSFCMA" type="5001"/>
@@ -25,7 +25,7 @@
         <styles xmi:type="notation:SortingStyle" xmi:id="_tFKSFAoFEeGp3q9HwSFCMA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_tFKSFQoFEeGp3q9HwSFCMA"/>
       </children>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tFJrAQoFEeGp3q9HwSFCMA" x="335" y="110" width="131" height="91"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tFJrAQoFEeGp3q9HwSFCMA" x="175" y="10" width="131" height="91"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_hBuVYQoFEeGp3q9HwSFCMA"/>
     <edges xmi:type="notation:Edge" xmi:id="_5cGZkAoFEeGp3q9HwSFCMA" type="4006" element="_5cEkYAoFEeGp3q9HwSFCMA" source="_tFJrAAoFEeGp3q9HwSFCMA" target="_hj4AMAoFEeGp3q9HwSFCMA">

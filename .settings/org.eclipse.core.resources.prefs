@@ -1,8 +1,11 @@
-#Mon Nov 21 15:30:30 CET 2011
+#Sat Dec 10 22:05:59 CET 2011
 eclipse.preferences.version=1
 encoding//diagrams/architectural\ patterns/ModelViewController.sad=UTF-8
 encoding//diagrams/behavioral\ patterns/Command.sad=UTF-8
 encoding//diagrams/creational\ patterns/AbstractFactory.sad=UTF-8
+encoding//diagrams/creational\ patterns/Builder.sad=UTF-8
+encoding//diagrams/creational\ patterns/FactoryMethod.sad=UTF-8
+encoding//diagrams/creational\ patterns/Prototype.sad=UTF-8
 encoding//diagrams/creational\ patterns/Singleton.sad=UTF-8
 encoding//diagrams/structural\ patterns/Facade.sad=UTF-8
 encoding//diagrams/vespucci/ExpectedSemantic.sad=UTF-8
@@ -11,6 +14,7 @@ encoding//diagrams/vespucci/GlobalOutgoingSemantic.sad=UTF-8
 encoding//diagrams/vespucci/InAndOutSemantic.sad=UTF-8
 encoding//diagrams/vespucci/IncomingSemantic.sad=UTF-8
 encoding//diagrams/vespucci/KindShortcutExample.sad=UTF-8
+encoding//diagrams/vespucci/NestingGlobal.sad=UTF-8
 encoding//diagrams/vespucci/NotAllowedSemantic.sad=UTF-8
 encoding//diagrams/vespucci/OutgoingSemantic.sad=UTF-8
 encoding//diagrams/vespucci/ViolationSemantic.sad=UTF-8
