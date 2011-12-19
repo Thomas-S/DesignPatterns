@@ -28,44 +28,66 @@
  */
 package org.pattern.abstract_factory;
 
-interface AbstractFactory {
-    IProduct1 createProduct1();
+//================================
+//======= Abstract Factory =======
+//================================
 
-    IProduct2 createProduct2();
+interface AbstractVegetation {
 
-    IProduct3 createProduct3();
+    /**
+     * @return Returns a new Weather object.
+     */
+    IWeather createWeather();
+
+    /**
+     * @return Returns a new Animal object.
+     */
+    IAnimal createAnimal();
+
+    /**
+     * @return Returns a new Plant object.
+     */
+    IPlant createPlant();
 }
 
-class ConcreteFactoryA implements AbstractFactory {
+// ==================================
+// ======= Concrete Factories =======
+// ==================================
+
+// ======= The desert =======
+
+class DesertVegetation implements AbstractVegetation {
     @Override
-    public IProduct1 createProduct1() {
-	return new ConcreteProduct1A();
+    public IWeather createWeather() {
+	return new DryWeather();
     }
 
     @Override
-    public IProduct2 createProduct2() {
-	return new ConcreteProduct2A();
+    public IAnimal createAnimal() {
+	return new ScorpionAnimal();
     }
 
     @Override
-    public IProduct3 createProduct3() {
-	return new ConcreteProduct3A();
+    public IPlant createPlant() {
+	return new CactusPlant();
     }
 }
 
-class ConcreteFactoryB implements AbstractFactory {
+// ======= The tropical zone =======
+
+class TropicalVegetation implements AbstractVegetation {
     @Override
-    public IProduct1 createProduct1() {
-	return new ConcreteProduct1B();
+    public IWeather createWeather() {
+	return new RainyWeather();
     }
 
     @Override
-    public IProduct2 createProduct2() {
-	return new ConcreteProduct2B();
+    public IAnimal createAnimal() {
+	return new PythonAnimal();
     }
 
     @Override
-    public IProduct3 createProduct3() {
-	return new ConcreteProduct3B();
+    public IPlant createPlant() {
+	return new BananaPlant();
     }
 }

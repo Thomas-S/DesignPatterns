@@ -28,16 +28,56 @@
  */
 package org.pattern.abstract_factory;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * A possible Client.
+ * 
+ * @author Thomas Schulz
+ * @version 1.0
+ */
 public class Client {
 
-    public static void main(String[] args) {
-	// exchangability at this point
-	AbstractFactory factory = new ConcreteFactoryA();
+    private Client() {
+    };
+
+    /**
+     * Creates a new vegetation.
+     * 
+     * @param vegetation
+     *            An abstract vegetation for which the products shall be
+     *            created.
+     * @return A list of string representations of the products.
+     */
+    private static List<String> createVegetation(AbstractVegetation vegetation) {
+	List<String> list = new ArrayList<String>();
 
 	// product implementations of ConcreteFactory
-	IProduct1 product1 = factory.createProduct1();
-	IProduct2 product2 = factory.createProduct2(); 
-	IProduct3 product3 = factory.createProduct3();
+	IWeather weather = vegetation.createWeather();
+	IAnimal animal = vegetation.createAnimal();
+	IPlant plant = vegetation.createPlant();
+
+	// product methods
+	list.add(weather.startWeather());
+	list.add(animal.getAnimalAction());
+	list.add(plant.getNameOfPlant());
+
+	return list;
+    }
+
+    /**
+     * The main method.
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
+	// exchangability at this point
+	AbstractVegetation vegetation = new TropicalVegetation();
+
+	for (String s : createVegetation(vegetation)) {
+	    System.out.println(s);
+	}
     }
 
 }

@@ -28,15 +28,85 @@
  */
 package org.pattern.abstract_factory;
 
-interface IProduct1{}
-interface IProduct2{}
-interface IProduct3{}
+//==================================
+// ======= Abstract Products =======
+//==================================
 
-class ConcreteProduct1A implements IProduct1{}
-class ConcreteProduct1B implements IProduct1{}
+interface IWeather {
+    /**
+     * @return A string representation of the weather.
+     */
+    String startWeather();
+}
 
-class ConcreteProduct2A implements IProduct2{}
-class ConcreteProduct2B implements IProduct2{}
+interface IAnimal {
+    /**
+     * @return A string representation of the animal.
+     */
+    String getAnimalAction();
+}
 
-class ConcreteProduct3A implements IProduct3{}
-class ConcreteProduct3B implements IProduct3{}
+interface IPlant {
+    /**
+     * @return A string representation of the plant.
+     */
+    String getNameOfPlant();
+}
+
+// =================================
+// ======= Concrete Products =======
+// =================================
+
+//======= Weather =======
+
+class DryWeather implements IWeather {
+
+    @Override
+    public String startWeather() {
+	return "It's really dry and there is almost no water around...";
+    }
+}
+
+class RainyWeather implements IWeather {
+
+    @Override
+    public String startWeather() {
+	return "It's hot and rainy all the time...";
+    }
+}
+
+//======= Animal =======
+
+class ScorpionAnimal implements IAnimal {
+
+    @Override
+    public String getAnimalAction() {
+	return "A scorpion circles you and raises its sting.";
+    }
+}
+
+class PythonAnimal implements IAnimal {
+
+    @Override
+    public String getAnimalAction() {
+	return "You see a python snake eating a gecko.";
+    }
+}
+
+//======= Plant =======
+
+class CactusPlant implements IPlant {
+
+    @Override
+    public String getNameOfPlant() {
+	return "This cactus looks really boring.";
+    }
+}
+
+class BananaPlant implements IPlant {
+
+    @Override
+    public String getNameOfPlant() {
+	return "That banana over there is almost yellow.";
+    }
+}
