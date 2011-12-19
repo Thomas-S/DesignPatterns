@@ -66,6 +66,14 @@ public class Client {
 	return list;
     }
 
+    // ESCA-JAVA0266:
+    private static void printVegetation(List<String> stringVegetation) {
+	for (String s : stringVegetation) {
+	    System.out.println(s);
+	}
+	System.out.println("=====");
+    }
+
     /**
      * The main method.
      * 
@@ -74,10 +82,12 @@ public class Client {
     public static void main(String[] args) {
 	// exchangability at this point
 	AbstractVegetation vegetation = new TropicalVegetation();
+	printVegetation(createVegetation(vegetation));
 
-	for (String s : createVegetation(vegetation)) {
-	    System.out.println(s);
-	}
+	// exchangability at this point
+	vegetation = new DesertVegetation();
+	printVegetation(createVegetation(vegetation));
+
     }
 
 }
