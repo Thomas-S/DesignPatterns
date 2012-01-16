@@ -26,19 +26,78 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.factory_method;
+package org.pattern.builder;
 
 /**
- * A concrete Creator.
+ * A class that models a simplified car.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColloquialLetterCreator extends AbstractDocumentBuilder {
-
-    @Override
-    protected IDocument createDocument() {
-	return new ColloquialLetter();
+public class Car {
+    
+    //=======================
+    //======= Product =======
+    //=======================
+    
+    // ESCA-JAVA0098:
+    String lightType;
+    String engineType;
+    String tyreType;
+    
+    /**
+     * Creates a new Car with the given parameters.
+     * 
+     * @param lights
+     * @param engine
+     * @param tyres
+     */
+    public Car(String lights, String engine, String tyres) {
+	lightType = lights;
+	engineType = engine;
+	tyreType = tyres;
     }
     
+    /**
+     * @return Returns the lightType.
+     */
+    public String getLightType() {
+        return lightType;
+    }
+    /**
+     * @param lightType The lightType to set.
+     */
+    public void setLightType(String lightType) {
+        this.lightType = lightType;
+    }
+    /**
+     * @return Returns the engineType.
+     */
+    public String getEngineType() {
+        return engineType;
+    }
+    /**
+     * @param engineType The engineType to set.
+     */
+    public void setEngineType(String engineType) {
+        this.engineType = engineType;
+    }
+    /**
+     * @return Returns the tyreType.
+     */
+    public String getTyreType() {
+        return tyreType;
+    }
+    /**
+     * @param tyreType The tyreType to set.
+     */
+    public void setTyreType(String tyreType) {
+        this.tyreType = tyreType;
+    }
+    
+    public String toString() {
+	return String.format("%s.%n%s.%n%s.%n", lightType, engineType, tyreType);
+    }
+    
+
 }

@@ -13,7 +13,6 @@
     </shapes>
     <shapes xmi:type="Ensemble" xmi:id="_Hj3d2Aj7EeG4KecXxGsGww" name="Concrete Products">
       <targetConnections xmi:type="Incoming" xmi:id="_rVoRkA5MEeGqU5FsDELgqQ" source="_Hj3d2Aj7EeG4KecXxGsGww" target="_E2ss8Aj7EeG4KecXxGsGww" name="implements"/>
-      <targetConnections xmi:type="Outgoing" xmi:id="_2O3nICpHEeGTbf2gvVUpLg" source="_Hj3d2Aj7EeG4KecXxGsGww" target="_xTwYACpHEeGTbf2gvVUpLg"/>
     </shapes>
     <shapes xmi:type="Dummy" xmi:id="_xTwYACpHEeGTbf2gvVUpLg" name=" Empty_Ensemble"/>
     <shapes xmi:type="Ensemble" xmi:id="_96Lj8DoUEeGOgf4Bj-3JEg" name="Client">
@@ -117,15 +116,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mGHUgxRGEeG_vug3-e8d8g" points="[2, -9, -27, 92]$[17, -61, -12, 40]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mGbdkBRGEeG_vug3-e8d8g" id="(0.35344827586206895,0.16981132075471697)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mGbdkRRGEeG_vug3-e8d8g" id="(0.3888888888888889,0.018867924528301886)"/>
-    </edges>
-    <edges xmi:type="notation:Edge" xmi:id="_2O6qcCpHEeGTbf2gvVUpLg" type="4003" element="_2O3nICpHEeGTbf2gvVUpLg" source="_Hj3d0Aj7EeG4KecXxGsGww" target="_xT0CYCpHEeGTbf2gvVUpLg">
-      <children xmi:type="notation:DecorationNode" xmi:id="_2O7RgCpHEeGTbf2gvVUpLg" type="6003">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2O7RgSpHEeGTbf2gvVUpLg" x="-10" y="-10"/>
-      </children>
-      <styles xmi:type="notation:RoutingStyle" xmi:id="_2O6qcSpHEeGTbf2gvVUpLg"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_2O6qcipHEeGTbf2gvVUpLg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2O6qcypHEeGTbf2gvVUpLg" points="[0, -6, 136, 47]$[0, -46, 136, 7]$[-85, -46, 51, 7]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2PFpkCpHEeGTbf2gvVUpLg" id="(0.11904761904761904,0.01639344262295082)"/>
     </edges>
     <edges xmi:type="notation:Edge" xmi:id="_2y8kkCpHEeGTbf2gvVUpLg" type="4003" element="_2y46MCpHEeGTbf2gvVUpLg" source="_E2i78Qj7EeG4KecXxGsGww" target="_xT0CYCpHEeGTbf2gvVUpLg">
       <children xmi:type="notation:DecorationNode" xmi:id="_2y9LoCpHEeGTbf2gvVUpLg" type="6003">

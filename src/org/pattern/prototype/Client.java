@@ -26,19 +26,29 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.factory_method;
+package org.pattern.prototype;
 
 /**
- * A concrete Creator.
- *
+ * An example client which benefits from the Prototype pattern.
+ * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColloquialLetterCreator extends AbstractDocumentBuilder {
+public class Client {
 
-    @Override
-    protected IDocument createDocument() {
-	return new ColloquialLetter();
+    private Client() {
     }
-    
+
+    /**
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
+	HumanCell c1 = new BrainCell("Brain Cell");
+	HumanCell c2 = c1.cloneMe();
+	c2.setName("Another Brain Cell");
+	// ESCA-JAVA0266:
+	System.out.println(c1.getName()+"\n"+c2.getName());
+    }
+
 }

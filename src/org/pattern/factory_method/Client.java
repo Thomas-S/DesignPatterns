@@ -28,21 +28,36 @@
  */
 package org.pattern.factory_method;
 
+/**
+ * An example client which benefits from the Factory Method pattern.
+ * 
+ * @author Thomas Schulz
+ * @version 1.0
+ */
 public class Client {
-    
+
+    private Client() {
+
+    }
+
     private static void printDocument(String doc) {
+	// ESCA-JAVA0266:
 	System.out.println(doc);
     }
-    
-    public static void main (String[] args) {
+
+    /**
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
 	AbstractDocumentBuilder docB = new BusinessLetterCreator();
-	
+
 	printDocument(docB.buildDocument());
-	
+
 	docB = new ColloquialLetterCreator();
-	
+
 	printDocument(docB.buildDocument());
-	
+
     }
 
 }

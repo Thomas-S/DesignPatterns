@@ -26,19 +26,34 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.factory_method;
+package org.pattern.builder;
 
+// ESCA-JAVA0014:
 /**
- * A concrete Creator.
+ * An example client which benefits from the Builder pattern.
  *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColloquialLetterCreator extends AbstractDocumentBuilder {
-
-    @Override
-    protected IDocument createDocument() {
-	return new ColloquialLetter();
+public class Client {
+    
+    private static void createCarUsingBuilder(CarBuilder builder) {
+	Director director = new Director(builder);
+	director.build();
+	Car car = builder.getCar();
+	// ESCA-JAVA0266:
+	System.out.println(car.toString());
     }
     
+    /**
+     * An example how to use the Builder pattern.
+     * 
+     * @param args
+     */
+    public static void main(String[] args) { 
+	// we only exchange the CarBuilder object
+	createCarUsingBuilder(new MercedesCarBuilder());
+	createCarUsingBuilder(new BentleyCarBuilder());
+    }
+
 }

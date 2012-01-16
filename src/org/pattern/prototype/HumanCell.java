@@ -26,19 +26,87 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.factory_method;
+package org.pattern.prototype;
 
 /**
- * A concrete Creator.
- *
+ * An abstract class that models biological cells.
+ * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColloquialLetterCreator extends AbstractDocumentBuilder {
+public abstract class HumanCell {
+
+    /**
+     * @return A string representation of the species.
+     */
+    public String getClassification() {
+	return "Human";
+    }
+
+    /**
+     * @return An identical new object.
+     */
+    public abstract HumanCell cloneMe();
+
+    /**
+     * @param name
+     *            The name to set.
+     */
+    public abstract void setName(String name);
+
+    /**
+     * @return The name of the cell.
+     */
+    public abstract String getName();
+
+}
+
+class BrainCell extends HumanCell {
+
+    String name = "Brain Cell";
+
+    BrainCell(String name) {
+	this.name = name;
+    }
 
     @Override
-    protected IDocument createDocument() {
-	return new ColloquialLetter();
+    public HumanCell cloneMe() {
+	return new BrainCell(getName());
     }
-    
+
+    @Override
+    public String getName() {
+	return name;
+    }
+
+    @Override
+    public void setName(String name) {
+	this.name = name;
+    }
+
+}
+
+class SkinCell extends HumanCell {
+
+    String name = "Skin Cell";
+
+    SkinCell(String name) {
+	this.name = name;
+    }
+
+    @Override
+    public HumanCell cloneMe() {
+	return new SkinCell(getName());
+    }
+
+    @Override
+    public String getName() {
+	return name;
+    }
+
+    @Override
+    public void setName(String name) {
+	this.name = name;
+    }
+
 }

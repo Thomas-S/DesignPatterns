@@ -5,10 +5,10 @@
       <targetConnections xmi:type="Expected" xmi:id="_8jqtoDq8EeGOgf4Bj-3JEg" source="_vbYW8CM9EeGr4LmOCiZzHg" target="_wclVQCM9EeGr4LmOCiZzHg" name="return_type"/>
       <targetConnections xmi:type="NotAllowed" xmi:id="_MgQtMDq9EeGOgf4Bj-3JEg" source="_vbYW8CM9EeGr4LmOCiZzHg" target="_v-UE4CM9EeGr4LmOCiZzHg"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_vr2b4CM9EeGr4LmOCiZzHg" name="Concrete Product">
+    <shapes xmi:type="Ensemble" xmi:id="_vr2b4CM9EeGr4LmOCiZzHg" name="Concrete Products">
       <targetConnections xmi:type="Incoming" xmi:id="_j8NyUCpLEeGTbf2gvVUpLg" source="_vr2b4CM9EeGr4LmOCiZzHg" target="_wclVQCM9EeGr4LmOCiZzHg" name="subtype"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_v-UE4CM9EeGr4LmOCiZzHg" name="Concrete Creator">
+    <shapes xmi:type="Ensemble" xmi:id="_v-UE4CM9EeGr4LmOCiZzHg" name="Concrete Creators">
       <targetConnections xmi:type="Incoming" xmi:id="_by4TsCpLEeGTbf2gvVUpLg" source="_v-UE4CM9EeGr4LmOCiZzHg" target="_vbYW8CM9EeGr4LmOCiZzHg" name="extends"/>
       <targetConnections xmi:type="Incoming" xmi:id="_6iMgsCpLEeGTbf2gvVUpLg" source="_v-UE4CM9EeGr4LmOCiZzHg" target="_vr2b4CM9EeGr4LmOCiZzHg" name="create"/>
     </shapes>

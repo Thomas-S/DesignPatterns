@@ -26,19 +26,52 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.factory_method;
+package org.pattern.builder;
 
 /**
- * A concrete Creator.
- *
+ * This class constructs cars using an abstract builder.
+ * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class ColloquialLetterCreator extends AbstractDocumentBuilder {
+public class Director {
 
-    @Override
-    protected IDocument createDocument() {
-	return new ColloquialLetter();
+    // ========================
+    // ======= Director =======
+    // ========================
+
+    CarBuilder builder;
+
+    /**
+     * @return Returns the builder.
+     */
+    public CarBuilder getBuilder() {
+	return builder;
     }
-    
+
+    /**
+     * @param builder
+     *            The builder to set.
+     */
+    public void setBuilder(CarBuilder builder) {
+	this.builder = builder;
+    }
+
+    /**
+     * Constructs the car according to the CarBuilder.
+     */
+    public void build() {
+	builder.buildCar();
+    }
+
+    /**
+     * Creates a new Director.
+     * 
+     * @param builder
+     *            The CarBuilder which defines the car to construct.
+     */
+    public Director(CarBuilder builder) {
+	this.builder = builder;
+    }
+
 }

@@ -28,6 +28,12 @@
  */
 package org.pattern.factory_method;
 
+/**
+ * A concrete Creator.
+ *
+ * @author Thomas Schulz
+ * @version 1.0
+ */
 public class BusinessLetterCreator extends AbstractDocumentBuilder {
 
     @Override
