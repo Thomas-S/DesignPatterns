@@ -26,29 +26,47 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.state.var1;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * This interface provides methods to change between the <br>
+ * health state of a soldier.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public interface HealthState {
 
-    private Client() {
-    }
-
+    // =====
+    // STATE
+    // =====
+    
     /**
+     * Heals a wounded Soldier.
      * 
-     * @param args
+     * @param s The soldier which shall be cured.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
-    }
-
+    String cure(Soldier s);
+    
+    /**
+     * Injures a healthy Soldier and kills an injured Soldier.
+     * 
+     * @param s The soldier which shall be wounded.
+     */
+    String wound(Soldier s);
+    
+    /**
+     * Resurrects a dead Soldier.
+     * 
+     * @param s The soldier which shall be resurrected.
+     */
+    String resurrect(Soldier s);
+    
+    /**
+     * Kills a Soldier.
+     * 
+     * @param s The soldier which shall be killed.
+     */
+    String kill(Soldier s);
+    
 }

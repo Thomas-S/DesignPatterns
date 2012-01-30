@@ -1,12 +1,14 @@
-#Sat Dec 10 22:05:59 CET 2011
+#Mon Jan 30 11:00:40 CET 2012
 eclipse.preferences.version=1
 encoding//diagrams/architectural\ patterns/ModelViewController.sad=UTF-8
 encoding//diagrams/behavioral\ patterns/Command.sad=UTF-8
+encoding//diagrams/behavioral\ patterns/Strategy.sad=UTF-8
 encoding//diagrams/creational\ patterns/AbstractFactory.sad=UTF-8
 encoding//diagrams/creational\ patterns/Builder.sad=UTF-8
 encoding//diagrams/creational\ patterns/FactoryMethod.sad=UTF-8
 encoding//diagrams/creational\ patterns/Prototype.sad=UTF-8
 encoding//diagrams/creational\ patterns/Singleton.sad=UTF-8
+encoding//diagrams/structural\ patterns/CompositeVar1.sad=UTF-8
 encoding//diagrams/structural\ patterns/Facade.sad=UTF-8
 encoding//diagrams/vespucci/ExpectedSemantic.sad=UTF-8
 encoding//diagrams/vespucci/GlobalIncomingSemantic.sad=UTF-8

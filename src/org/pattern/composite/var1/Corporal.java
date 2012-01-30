@@ -26,29 +26,28 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.composite.var1;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * A leaf MilitaryUnit.
  * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
-
-    private Client() {
+public class Corporal extends MilitaryUnit {
+    
+    /** 
+     * Creates a new Corporal.
+     * 
+     * @param name
+     */
+    public Corporal(String name) {
+	setName(name);
     }
 
-    /**
-     * 
-     * @param args
-     */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    @Override
+    protected String print() {
+	return "--Corporal " + getName() + "\n";
     }
 
 }

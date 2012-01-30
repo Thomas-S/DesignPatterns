@@ -35,6 +35,10 @@ package org.pattern.prototype;
  * @version 1.0
  */
 public abstract class HumanCell {
+    
+    // =========
+    // PROTOTYPE
+    // =========
 
     /**
      * @return A string representation of the species.
@@ -61,8 +65,13 @@ public abstract class HumanCell {
 
 }
 
+
 class BrainCell extends HumanCell {
 
+    // ==================
+    // CONCRETE PROTOTYPE
+    // ==================
+    
     String name = "Brain Cell";
 
     BrainCell(String name) {
@@ -88,6 +97,10 @@ class BrainCell extends HumanCell {
 
 class SkinCell extends HumanCell {
 
+    // ==================
+    // CONCRETE PROTOTYPE
+    // ==================
+    
     String name = "Skin Cell";
 
     SkinCell(String name) {

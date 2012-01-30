@@ -26,29 +26,31 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.singleton;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * The singleton with lazy instantiation.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Singleton {
 
-    private Client() {
+    private static Singleton INSTANCE;
+    
+    private Singleton() {
+	
     }
-
+    
     /**
      * 
-     * @param args
+     * @return The singleton instance.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public static Singleton getInstance() {
+	if (INSTANCE == null) {
+	    INSTANCE = new Singleton();
+	}
+	return INSTANCE;
     }
-
+    
 }

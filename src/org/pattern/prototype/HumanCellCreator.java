@@ -29,26 +29,34 @@
 package org.pattern.prototype;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * A class which is allowed to instantiate the concrete prototypes, <br>
+ * namely BrainCell and SkinCell.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
-
-    private Client() {
+public class HumanCellCreator {
+    
+    // =================
+    // PROTOTYPE CREATOR
+    // =================
+    
+    private HumanCellCreator() {
+	
     }
-
+    
     /**
-     * 
-     * @param args
+     * @return An instance of BrainCell.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public static HumanCell getBrainCell() {
+	return new BrainCell("Brain Cell");
+    }
+    
+    /**
+     * @return An instance of SkinCell.
+     */
+    public static HumanCell getSkinCell() {
+	return new SkinCell("Skin Cell");
     }
 
 }

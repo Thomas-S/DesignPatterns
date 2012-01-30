@@ -26,29 +26,58 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.composite.var1;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * A composite MilitaryUnit.
  * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Captain extends MilitaryUnit {
 
-    private Client() {
-    }
+    // =========================
+    // ======= Composite =======
+    // =========================
+
+    List<MilitaryUnit> company = new ArrayList<MilitaryUnit>();
 
     /**
+     * Creates a new Captain.
      * 
-     * @param args
+     * @param name
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public Captain(String name) {
+	setName(name);
+    }
+    
+    @Override
+    protected boolean add(MilitaryUnit mu) {
+	company.add(mu);
+	return true;
+    }
+    
+    @Override
+    protected boolean remove(MilitaryUnit mu) {
+	company.remove(mu);
+	return true;
+    }
+    
+    @Override
+    protected MilitaryUnit getMilitaryUnit(int i) {
+	return company.get(i);
+    }
+
+    @Override
+    protected String print() {
+	String result = "-Captain " + getName() + "\n";
+	for (MilitaryUnit mu : company) {
+	    result += mu.print();
+	}
+	return result;
     }
 
 }

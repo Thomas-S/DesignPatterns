@@ -26,29 +26,42 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.state.var1;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * This class models a health state where the context is healthy.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Healthy implements HealthState {
 
-    private Client() {
+    // ==============
+    // CONCRETE STATE
+    // ==============
+    
+    // The transitions were made in the concrete states.
+
+    @Override
+    public String cure(Soldier s) {
+	return "I'm fine, thanks. No need to cure me.";
     }
 
-    /**
-     * 
-     * @param args
-     */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    @Override
+    public String wound(Soldier s) {
+	s.setHealth(new Wounded());
+	return "Ahhh - that hurts. One more hit and I'm dead.";
+    }
+
+    @Override
+    public String resurrect(Soldier s) {
+	return "I'm already alive.";
+    }
+
+    @Override
+    public String kill(Soldier s) {
+	s.setHealth(new Dead());
+	return "*The soldier dies painless*";
     }
 
 }

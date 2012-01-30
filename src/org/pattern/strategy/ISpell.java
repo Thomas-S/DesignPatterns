@@ -26,29 +26,49 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.strategy;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * This interface captures behavior that all spells have in common.
  * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
-
-    private Client() {
-    }
+public interface ISpell {
+    
+    // ========
+    // STRATEGY
+    // ========
 
     /**
-     * 
-     * @param args
+     * Casts the spell and prints a console output.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
-    }
+    void cast();
+    
+}
 
+class Fireball implements ISpell {
+
+    // =================
+    // CONCRETE STRATEGY
+    // =================
+    
+    @Override
+    public void cast() {
+	// ESCA-JAVA0266:
+	System.out.println("The Fireball spell inflicts 150 damage points.");
+    }
+}
+
+class Cure implements ISpell {
+
+    // =================
+    // CONCRETE STRATEGY
+    // =================
+    
+    @Override
+    public void cast() {
+	// ESCA-JAVA0266:
+	System.out.println("The Cure spell regenerates 50 health points.");
+    }
 }

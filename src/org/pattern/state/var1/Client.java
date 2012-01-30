@@ -26,7 +26,7 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.state.var1;
 
 /**
  * An example client which benefits from the Prototype pattern.
@@ -44,11 +44,16 @@ public class Client {
      * @param args
      */
     public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+	Soldier s = new Soldier();
+	s.cure();
+	s.wound();
+	s.wound();
+	s.resurrect();
+	s.kill();
+	s.resurrect();
+	s.wound();
+	s.kill();
+	s.resurrect();
     }
-
+    
 }

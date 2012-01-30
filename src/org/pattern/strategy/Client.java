@@ -26,10 +26,10 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.strategy;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * An example client which benefits from the Strategy pattern.
  * 
  * @author Thomas Schulz
  * @version 1.0
@@ -44,11 +44,13 @@ public class Client {
      * @param args
      */
     public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+	BattleMage b = new BattleMage();
+	b.cast();
+	b.setCurrentSpell(new Cure());
+	b.cast();
+	b.fight();
+	b.setCurrentWeapon(new Axe());
+	b.fight();
     }
 
 }

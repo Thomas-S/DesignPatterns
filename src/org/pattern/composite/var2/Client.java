@@ -26,10 +26,10 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.composite.var2;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * An example client which benefits from the Composite pattern.
  * 
  * @author Thomas Schulz
  * @version 1.0
@@ -44,11 +44,33 @@ public class Client {
      * @param args
      */
     public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
+	Major major = new Major("Payne");
+	Captain captain1 = new Captain("Kirk");
+	MilitaryUnit corporal1a = new Corporal("Kirkguy");
+	MilitaryUnit corporal1b = new Corporal("Kirkdouche");
+	Captain captain2 = new Captain("Picard");
+	MilitaryUnit corporal2a = new Corporal("Picardguy");
+	MilitaryUnit corporal2b = new Corporal("Picardson");
+	
+	major.add(captain1);
+	major.add(captain2);
+	
+	captain1.add(corporal1a);
+	captain1.add(corporal1b);
+	
+	captain2.add(corporal2a);
+	captain2.add(corporal2b);
+	
 	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+	System.out.println(major.print());
+	
+	captain1.remove(corporal1b);
+	
+	// ESCA-JAVA0266:
+	System.out.println(major.print());
+	
+	// ESCA-JAVA0266:
+	System.out.println(captain2.getMilitaryUnit(1).print());
     }
 
 }

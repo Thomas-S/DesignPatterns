@@ -26,29 +26,67 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.composite.var1;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * An abstract MilitaryUnit.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
-
-    private Client() {
+public abstract class MilitaryUnit {
+    
+    //=========================
+    //======= Component =======
+    //=========================
+    
+    private String name;
+    
+    /**
+     * @return Returns the name.
+     */
+    public String getName() {
+        return name;
     }
 
     /**
-     * 
-     * @param args
+     * @param name The name to set.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Returns a String representation of the military hierarchy.
+     */
+    protected abstract String print();
+    
+    // ESCA-JAVA0173:
+    /**
+     * 
+     * @param mu The MilitaryUnit to add.
+     */
+    protected boolean add(MilitaryUnit mu) {
+	return false;
+    }
+    
+    // ESCA-JAVA0173:
+    /**
+     * 
+     * @param mu The MilitaryUnit to remove.
+     */
+    protected boolean remove(MilitaryUnit mu) {
+	return false;
+    }
+    
+    // ESCA-JAVA0173:
+    /**
+     * 
+     * @param i
+     * @return Returns the i-th MilitaryUnit.
+     */
+    protected MilitaryUnit getMilitaryUnit(int i) {
+	return null;
     }
 
 }

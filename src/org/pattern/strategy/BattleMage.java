@@ -26,29 +26,52 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.strategy;
 
 /**
- * An example client which benefits from the Prototype pattern.
+ * A BattleMage has the ability to: <br>
+ * - fight with different weapons <br>
+ * - cast different spells
  * 
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class BattleMage {
 
-    private Client() {
+    // =======
+    // CONTEXT
+    // =======
+
+    IWeapon currentWeapon = new Dagger();
+    ISpell currentSpell = new Fireball();
+
+    /**
+     * @param currentWeapon
+     *            The currentWeapon to set.
+     */
+    public void setCurrentWeapon(IWeapon currentWeapon) {
+	this.currentWeapon = currentWeapon;
     }
 
     /**
-     * 
-     * @param args
+     * @param currentSpell
+     *            The currentSpell to set.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public void setCurrentSpell(ISpell currentSpell) {
+	this.currentSpell = currentSpell;
     }
 
+    /**
+     * Calls the interface method of the spell strategy.
+     */
+    public void cast() {
+	currentSpell.cast();
+    }
+
+    /**
+     * Calls the interface method of the weapon strategy.
+     */
+    public void fight() {
+	currentWeapon.use();
+    }
 }

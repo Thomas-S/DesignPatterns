@@ -26,29 +26,74 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.prototype;
+package org.pattern.state.var1;
 
 /**
- * An example client which benefits from the Prototype pattern.
- * 
+ * A soldier who can have several health states.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Soldier {
 
-    private Client() {
+    // =======
+    // CONTEXT
+    // =======
+    
+    HealthState health;
+    
+    /**
+     * Creates a new healthy Soldier.
+     */
+    public Soldier() {
+	health = new Healthy();
     }
 
     /**
-     * 
-     * @param args
+     * @return Returns the health.
      */
-    public static void main(String[] args) {
-	HumanCell c1 = HumanCellCreator.getBrainCell();
-	HumanCell c2 = c1.cloneMe();
-	c2.setName("Another Brain Cell");
-	// ESCA-JAVA0266:
-	System.out.println(c1.getName()+"\n"+c2.getName());
+    public HealthState getHealth() {
+        return health;
     }
 
+    /**
+     * @param health The health state to set.
+     */
+    public void setHealth(HealthState health) {
+        this.health = health;
+    }
+    
+    /**
+     * Heals a wounded Soldier.
+     */
+    public void cure() {
+	printState(health.cure(this));
+    }
+    
+    /**
+     * Injures a healthy Soldier and kills an injured Soldier.
+     */
+    public void wound() {
+	printState(health.wound(this));
+    }
+    
+    /**
+     * Resurrects a dead Soldier.
+     */
+    public void resurrect() {
+	printState(health.resurrect(this));
+    }
+    
+    /**
+     * Kills a Soldier.
+     */
+    public void kill() {
+	printState(health.kill(this));
+    }
+    
+    private static void printState(String s) {
+	// ESCA-JAVA0266:
+	System.out.println(s);
+    }
+    
 }
