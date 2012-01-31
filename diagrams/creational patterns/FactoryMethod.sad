@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_tIpfUCM9EeGr4LmOCiZzHg">
-    <shapes xmi:type="Ensemble" xmi:id="_vbYW8CM9EeGr4LmOCiZzHg" name="Creator">
+    <shapes xmi:type="Ensemble" xmi:id="_vbYW8CM9EeGr4LmOCiZzHg" name="Creator" query="method('org.pattern.factory_method','AbstractDocumentBuilder','createDocument','org.pattern.factory_method.IDocument',[])&#xA;">
       <targetConnections xmi:type="Expected" xmi:id="_8jqtoDq8EeGOgf4Bj-3JEg" source="_vbYW8CM9EeGr4LmOCiZzHg" target="_wclVQCM9EeGr4LmOCiZzHg" name="return_type"/>
       <targetConnections xmi:type="NotAllowed" xmi:id="_MgQtMDq9EeGOgf4Bj-3JEg" source="_vbYW8CM9EeGr4LmOCiZzHg" target="_v-UE4CM9EeGr4LmOCiZzHg"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_vr2b4CM9EeGr4LmOCiZzHg" name="Concrete Products">
+    <shapes xmi:type="Ensemble" xmi:id="_vr2b4CM9EeGr4LmOCiZzHg" name="Concrete Products" query="class_with_members('org.pattern.factory_method','BusinessLetter')&#xA; or class_with_members('org.pattern.factory_method','ColloquialLetter')&#xA;">
       <targetConnections xmi:type="Incoming" xmi:id="_j8NyUCpLEeGTbf2gvVUpLg" source="_vr2b4CM9EeGr4LmOCiZzHg" target="_wclVQCM9EeGr4LmOCiZzHg" name="subtype"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_v-UE4CM9EeGr4LmOCiZzHg" name="Concrete Creators">
+    <shapes xmi:type="Ensemble" xmi:id="_v-UE4CM9EeGr4LmOCiZzHg" name="Concrete Creators" query="class_with_members('org.pattern.factory_method','ColloquialLetterCreator')&#xA; or class_with_members('org.pattern.factory_method','BusinessLetterCreator')&#xA;">
       <targetConnections xmi:type="Incoming" xmi:id="_by4TsCpLEeGTbf2gvVUpLg" source="_v-UE4CM9EeGr4LmOCiZzHg" target="_vbYW8CM9EeGr4LmOCiZzHg" name="extends"/>
       <targetConnections xmi:type="Incoming" xmi:id="_6iMgsCpLEeGTbf2gvVUpLg" source="_v-UE4CM9EeGr4LmOCiZzHg" target="_vr2b4CM9EeGr4LmOCiZzHg" name="create"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_wclVQCM9EeGr4LmOCiZzHg" name="Product">
+    <shapes xmi:type="Ensemble" xmi:id="_wclVQCM9EeGr4LmOCiZzHg" name="Product" query="class_with_members('org.pattern.factory_method','IDocument')&#xA;">
       <targetConnections xmi:type="NotAllowed" xmi:id="__IFyMDq8EeGOgf4Bj-3JEg" source="_wclVQCM9EeGr4LmOCiZzHg" target="_vbYW8CM9EeGr4LmOCiZzHg"/>
       <targetConnections xmi:type="NotAllowed" xmi:id="_PCrmoDq9EeGOgf4Bj-3JEg" source="_wclVQCM9EeGr4LmOCiZzHg" target="_vr2b4CM9EeGr4LmOCiZzHg"/>
     </shapes>

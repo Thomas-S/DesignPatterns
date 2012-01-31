@@ -26,51 +26,90 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.composite.var2;
+package org.pattern.state.var2;
 
 /**
- * An example client which benefits from the Composite pattern.
- * 
+ * A soldier who can have several health states.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Soldier {
 
-    private Client() {
-    }
-
+    // =======
+    // CONTEXT
+    // =======
+    
+    private HealthState healthy = new Healthy();
+    private HealthState wounded = new Wounded();
+    private HealthState dead = new Dead();
+    
+    private HealthState currentState;
+    
     /**
-     * 
-     * @param args
+     * @return Returns the currentState.
      */
-    public static void main(String[] args) {
-	Major major = new Major("Payne");
-	Captain captain1 = new Captain("Kirk");
-	Corporal corporal1a = new Corporal("Kirkguy");
-	Corporal corporal1b = new Corporal("Kirkdouche");
-	Captain captain2 = new Captain("Picard");
-	Corporal corporal2a = new Corporal("Picardguy");
-	Corporal corporal2b = new Corporal("Picardson");
-	
-	major.add(captain1);
-	major.add(captain2);
-	
-	captain1.add(corporal1a);
-	captain1.add(corporal1b);
-	
-	captain2.add(corporal2a);
-	captain2.add(corporal2b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	captain1.remove(corporal1b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	// ESCA-JAVA0266:
-	System.out.println(captain2.getMilitaryUnit(1).print());
+    public HealthState getCurrentState() {
+        return currentState;
+    }
+    
+    /**
+     * Creates a new healthy Soldier.
+     */
+    public Soldier() {
+	currentState = healthy;
     }
 
+    
+    /**
+     * Heals a wounded Soldier.
+     */
+    public void cure() {
+	printState(currentState.cure());
+	if (is(wounded)) {
+	    currentState = healthy;
+	}
+    }
+    
+    /**
+     * Injures a healthy Soldier and kills an injured Soldier.
+     */
+    public void wound() {
+	printState(currentState.wound());
+	if (is(wounded)) {
+	    currentState = dead;
+	} else if (is(healthy)) {
+	    currentState = wounded;
+	}
+    }
+    
+    /**
+     * Resurrects a dead Soldier.
+     */
+    public void resurrect() {
+	printState(currentState.resurrect());
+	if (is(dead)) {
+	    currentState = healthy;
+	}
+    }
+    
+    /**
+     * Kills a Soldier.
+     */
+    public void kill() {
+	printState(currentState.kill());
+	if (!is(dead)) {
+	    currentState = dead;
+	}
+    }
+    
+    private static void printState(String s) {
+	// ESCA-JAVA0266:
+	System.out.println(s);
+    }
+    
+    private boolean is(HealthState s) {
+	return currentState == s;
+    }
+    
 }

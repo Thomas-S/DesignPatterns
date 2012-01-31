@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_hBE1IAoFEeGp3q9HwSFCMA">
-    <shapes xmi:type="Ensemble" xmi:id="_hjzuwAoFEeGp3q9HwSFCMA" name="Singleton"/>
+    <shapes xmi:type="Ensemble" xmi:id="_hjzuwAoFEeGp3q9HwSFCMA" name="Singleton" query="class_with_members('org.pattern.singleton','Singleton')&#xA;"/>
     <shapes xmi:type="Ensemble" xmi:id="_tFH10AoFEeGp3q9HwSFCMA" name="Empty_Ensemble" description=" This ensemble does&#xD;&#xA; not have any&#xD;&#xA; source elements.">
       <targetConnections xmi:type="GlobalIncoming" xmi:id="_5cEkYAoFEeGp3q9HwSFCMA" source="_tFH10AoFEeGp3q9HwSFCMA" target="_hjzuwAoFEeGp3q9HwSFCMA" name="create"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_iIcCECRtEeGZSsdxWQeAIw" name="Client">
+    <shapes xmi:type="Ensemble" xmi:id="_iIcCECRtEeGZSsdxWQeAIw" name="Client" query="class_with_members('org.pattern.singleton','Client')&#xA;">
       <targetConnections xmi:type="Expected" xmi:id="_mxq3ACRtEeGZSsdxWQeAIw" source="_iIcCECRtEeGZSsdxWQeAIw" target="_hjzuwAoFEeGp3q9HwSFCMA" name="calls"/>
     </shapes>
   </ShapesDiagram>

@@ -26,51 +26,39 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.composite.var2;
+package org.pattern.state.var2;
 
 /**
- * An example client which benefits from the Composite pattern.
- * 
+ * This interface provides methods to change between the <br>
+ * health state of a soldier.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public interface HealthState {
 
-    private Client() {
-    }
-
+    // =====
+    // STATE
+    // =====
+    
     /**
-     * 
-     * @param args
+     * Heals a wounded Soldier.
      */
-    public static void main(String[] args) {
-	Major major = new Major("Payne");
-	Captain captain1 = new Captain("Kirk");
-	Corporal corporal1a = new Corporal("Kirkguy");
-	Corporal corporal1b = new Corporal("Kirkdouche");
-	Captain captain2 = new Captain("Picard");
-	Corporal corporal2a = new Corporal("Picardguy");
-	Corporal corporal2b = new Corporal("Picardson");
-	
-	major.add(captain1);
-	major.add(captain2);
-	
-	captain1.add(corporal1a);
-	captain1.add(corporal1b);
-	
-	captain2.add(corporal2a);
-	captain2.add(corporal2b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	captain1.remove(corporal1b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	// ESCA-JAVA0266:
-	System.out.println(captain2.getMilitaryUnit(1).print());
-    }
-
+    String cure();
+    
+    /**
+     * Injures a healthy Soldier and kills an injured Soldier.
+     */
+    String wound();
+    
+    /**
+     * Resurrects a dead Soldier.
+     */
+    String resurrect();
+    
+    /**
+     * Kills a Soldier.
+     */
+    String kill();
+    
 }

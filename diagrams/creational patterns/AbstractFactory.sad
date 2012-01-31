@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_2y6pIQj6EeG4KecXxGsGww">
-    <shapes xmi:type="Ensemble" xmi:id="_AgC1wAj7EeG4KecXxGsGww" name="Abstract Factory">
+    <shapes xmi:type="Ensemble" xmi:id="_AgC1wAj7EeG4KecXxGsGww" name="Abstract Factory" query="class_with_members('org.pattern.abstract_factory','AbstractVegetation')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_mGB08BRGEeG_vug3-e8d8g" source="_AgC1wAj7EeG4KecXxGsGww" target="_E2ss8Aj7EeG4KecXxGsGww"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_CddkuAj7EeG4KecXxGsGww" name="Concrete Factories">
+    <shapes xmi:type="Ensemble" xmi:id="_CddkuAj7EeG4KecXxGsGww" name="Concrete Factories" query="class_with_members('org.pattern.abstract_factory','DesertVegetation')&#xA; or class_with_members('org.pattern.abstract_factory','TropicalVegetation')&#xA;">
       <targetConnections xmi:type="GlobalIncoming" xmi:id="_XW9bwAj-EeG4KecXxGsGww" source="_CddkuAj7EeG4KecXxGsGww" target="_Hj3d2Aj7EeG4KecXxGsGww" name="create"/>
       <targetConnections xmi:type="Incoming" xmi:id="_nsPwEA5MEeGqU5FsDELgqQ" source="_CddkuAj7EeG4KecXxGsGww" target="_AgC1wAj7EeG4KecXxGsGww" name="implements"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_E2ss8Aj7EeG4KecXxGsGww" name="Abstract Products">
+    <shapes xmi:type="Ensemble" xmi:id="_E2ss8Aj7EeG4KecXxGsGww" name="Abstract Products" query="class_with_members('org.pattern.abstract_factory','IPlant')&#xA; or class_with_members('org.pattern.abstract_factory','IWeather')&#xA; or class_with_members('org.pattern.abstract_factory','IAnimal')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_2y46MCpHEeGTbf2gvVUpLg" source="_E2ss8Aj7EeG4KecXxGsGww" target="_xTwYACpHEeGTbf2gvVUpLg"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_Hj3d2Aj7EeG4KecXxGsGww" name="Concrete Products">
+    <shapes xmi:type="Ensemble" xmi:id="_Hj3d2Aj7EeG4KecXxGsGww" name="Concrete Products" query="class_with_members('org.pattern.abstract_factory','DryWeather')&#xA; or class_with_members('org.pattern.abstract_factory','PythonAnimal')&#xA; or class_with_members('org.pattern.abstract_factory','BananaPlant')&#xA; or class_with_members('org.pattern.abstract_factory','ScorpionAnimal')&#xA; or class_with_members('org.pattern.abstract_factory','RainyWeather')&#xA; or class_with_members('org.pattern.abstract_factory','CactusPlant')&#xA;">
       <targetConnections xmi:type="Incoming" xmi:id="_rVoRkA5MEeGqU5FsDELgqQ" source="_Hj3d2Aj7EeG4KecXxGsGww" target="_E2ss8Aj7EeG4KecXxGsGww" name="implements"/>
     </shapes>
     <shapes xmi:type="Dummy" xmi:id="_xTwYACpHEeGTbf2gvVUpLg" name=" Empty_Ensemble"/>
-    <shapes xmi:type="Ensemble" xmi:id="_96Lj8DoUEeGOgf4Bj-3JEg" name="Client">
+    <shapes xmi:type="Ensemble" xmi:id="_96Lj8DoUEeGOgf4Bj-3JEg" name="Client" query="class_with_members('org.pattern.abstract_factory','Client')&#xA;">
       <targetConnections xmi:type="NotAllowed" xmi:id="_BkQpADoVEeGOgf4Bj-3JEg" source="_96Lj8DoUEeGOgf4Bj-3JEg" target="_Hj3d2Aj7EeG4KecXxGsGww"/>
       <targetConnections xmi:type="Expected" xmi:id="_suGoUDqqEeGOgf4Bj-3JEg" source="_96Lj8DoUEeGOgf4Bj-3JEg" target="_CddkuAj7EeG4KecXxGsGww" name="create"/>
     </shapes>

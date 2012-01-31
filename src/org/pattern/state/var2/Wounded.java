@@ -26,51 +26,40 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-package org.pattern.composite.var2;
+package org.pattern.state.var2;
 
 /**
- * An example client which benefits from the Composite pattern.
- * 
+ * This class models a health state where the context is wounded.
+ *
  * @author Thomas Schulz
  * @version 1.0
  */
-public class Client {
+public class Wounded implements HealthState {
 
-    private Client() {
+    // ==============
+    // CONCRETE STATE
+    // ==============
+    
+    // The transitions were made in the context.
+    
+    @Override
+    public String cure() {
+	return "Thanks for the healing. I'm fine now.";
     }
 
-    /**
-     * 
-     * @param args
-     */
-    public static void main(String[] args) {
-	Major major = new Major("Payne");
-	Captain captain1 = new Captain("Kirk");
-	Corporal corporal1a = new Corporal("Kirkguy");
-	Corporal corporal1b = new Corporal("Kirkdouche");
-	Captain captain2 = new Captain("Picard");
-	Corporal corporal2a = new Corporal("Picardguy");
-	Corporal corporal2b = new Corporal("Picardson");
-	
-	major.add(captain1);
-	major.add(captain2);
-	
-	captain1.add(corporal1a);
-	captain1.add(corporal1b);
-	
-	captain2.add(corporal2a);
-	captain2.add(corporal2b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	captain1.remove(corporal1b);
-	
-	// ESCA-JAVA0266:
-	System.out.println(major.print());
-	
-	// ESCA-JAVA0266:
-	System.out.println(captain2.getMilitaryUnit(1).print());
+    @Override
+    public String wound() {
+	return "*The soldier dies in pain*";
+    }
+
+    @Override
+    public String resurrect() {
+	return "I'm wounded, but not dead.";
+    }
+
+    @Override
+    public String kill() {
+	return "*The wounded soldier dies painless*";
     }
 
 }

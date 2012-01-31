@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_PLOVMCMwEeGr4LmOCiZzHg">
-    <shapes xmi:type="Ensemble" xmi:id="_YhhWMCMwEeGr4LmOCiZzHg" name="Client">
+    <shapes xmi:type="Ensemble" xmi:id="_YhhWMCMwEeGr4LmOCiZzHg" name="Client" query="class_with_members('org.pattern.builder','Client')&#xA;">
       <targetConnections xmi:type="NotAllowed" xmi:id="_wmQGsEAdEeG9BcIENJ-JrQ" source="_YhhWMCMwEeGr4LmOCiZzHg" target="_dVD9sCMwEeGr4LmOCiZzHg" name="create"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_aWR4YCMwEeGr4LmOCiZzHg" name="Builder"/>
-    <shapes xmi:type="Ensemble" xmi:id="_bldoUCMwEeGr4LmOCiZzHg" name="Director">
+    <shapes xmi:type="Ensemble" xmi:id="_aWR4YCMwEeGr4LmOCiZzHg" name="Builder" query="class_with_members('org.pattern.builder','CarBuilder')&#xA;"/>
+    <shapes xmi:type="Ensemble" xmi:id="_bldoUCMwEeGr4LmOCiZzHg" name="Director" query="class_with_members('org.pattern.builder','Director')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_4lJDsCMwEeGr4LmOCiZzHg" source="_bldoUCMwEeGr4LmOCiZzHg" target="_aWR4YCMwEeGr4LmOCiZzHg"/>
       <targetConnections xmi:type="Expected" xmi:id="_2hEwQEAmEeG9BcIENJ-JrQ" source="_bldoUCMwEeGr4LmOCiZzHg" target="_aWR4YCMwEeGr4LmOCiZzHg" name="parameter"/>
       <targetConnections xmi:type="Outgoing" xmi:id="_TZs-AUEPEeGuYNMP4Nz_yg" source="_bldoUCMwEeGr4LmOCiZzHg" target="_eTTuoCMwEeGr4LmOCiZzHg" name="create"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_dVD9sCMwEeGr4LmOCiZzHg" name="Product">
+    <shapes xmi:type="Ensemble" xmi:id="_dVD9sCMwEeGr4LmOCiZzHg" name="Product" query="class_with_members('org.pattern.builder','Car')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_xjZD4D7qEeG9BcIENJ-JrQ" source="_dVD9sCMwEeGr4LmOCiZzHg" target="_wQ_A0D7qEeG9BcIENJ-JrQ"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_eTTuoCMwEeGr4LmOCiZzHg" name="Concrete Builder">
+    <shapes xmi:type="Ensemble" xmi:id="_eTTuoCMwEeGr4LmOCiZzHg" name="Concrete Builder" query="class_with_members('org.pattern.builder','BentleyCarBuilder')&#xA; or class_with_members('org.pattern.builder','MercedesCarBuilder')&#xA;">
       <targetConnections xmi:type="Incoming" xmi:id="_C6R3sEAeEeG9BcIENJ-JrQ" source="_eTTuoCMwEeGr4LmOCiZzHg" target="_dVD9sCMwEeGr4LmOCiZzHg" name="create"/>
       <targetConnections xmi:type="Incoming" xmi:id="_JS_tQEAeEeG9BcIENJ-JrQ" source="_eTTuoCMwEeGr4LmOCiZzHg" target="_aWR4YCMwEeGr4LmOCiZzHg" name="subtype"/>
     </shapes>

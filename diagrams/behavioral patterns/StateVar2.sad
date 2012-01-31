@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://vespucci.editor/2011-06-01" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <ShapesDiagram xmi:id="_wkjLYCNyEeGr4LmOCiZzHg">
-    <shapes xmi:type="Ensemble" xmi:id="_bAGk8ENPEeGuYNMP4Nz_yg" name="Client" query="class_with_members('org.pattern.state','Client')&#xA;">
+    <shapes xmi:type="Ensemble" xmi:id="_bAGk8ENPEeGuYNMP4Nz_yg" name="Client" query="class_with_members('org.pattern.state.var2','Client')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_fOXVIENPEeGuYNMP4Nz_yg" source="_bAGk8ENPEeGuYNMP4Nz_yg" target="_dk0kcENPEeGuYNMP4Nz_yg"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_dk0kcENPEeGuYNMP4Nz_yg" name="Context" query="class_with_members('org.pattern.state','Soldier')&#xA;">
+    <shapes xmi:type="Ensemble" xmi:id="_dk0kcENPEeGuYNMP4Nz_yg" name="Context" query="class_with_members('org.pattern.state.var2','Soldier')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_K138kENQEeGuYNMP4Nz_yg" source="_dk0kcENPEeGuYNMP4Nz_yg" target="_jIbW8ENPEeGuYNMP4Nz_yg"/>
       <targetConnections xmi:type="Outgoing" xmi:id="_MWieEENQEeGuYNMP4Nz_yg" source="_dk0kcENPEeGuYNMP4Nz_yg" target="_gbnycENPEeGuYNMP4Nz_yg"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_gbnycENPEeGuYNMP4Nz_yg" name="State" query="class_with_members('org.pattern.state','HealthState')&#xA;">
+    <shapes xmi:type="Ensemble" xmi:id="_gbnycENPEeGuYNMP4Nz_yg" name="State" query="class_with_members('org.pattern.state.var2','HealthState')&#xA;">
       <targetConnections xmi:type="Outgoing" xmi:id="_SAtgsEXDEeGRQoDF7TjzwA" source="_gbnycENPEeGuYNMP4Nz_yg" target="_Om8vkUXDEeGRQoDF7TjzwA"/>
     </shapes>
-    <shapes xmi:type="Ensemble" xmi:id="_jIbW8ENPEeGuYNMP4Nz_yg" name="Concrete States" query="class_with_members('org.pattern.state','Dead')&#xA; or class_with_members('org.pattern.state','Healthy')&#xA; or class_with_members('org.pattern.state','Wounded')&#xA;">
+    <shapes xmi:type="Ensemble" xmi:id="_jIbW8ENPEeGuYNMP4Nz_yg" name="Concrete States" query="class_with_members('org.pattern.state.var2','Dead')&#xA; or class_with_members('org.pattern.state.var2','Wounded')&#xA; or class_with_members('org.pattern.state.var2','Healthy')&#xA;">
       <targetConnections xmi:type="Incoming" xmi:id="_n4GLEENPEeGuYNMP4Nz_yg" source="_jIbW8ENPEeGuYNMP4Nz_yg" target="_gbnycENPEeGuYNMP4Nz_yg" name="implements"/>
       <targetConnections xmi:type="Outgoing" xmi:id="_h7Q_QEXLEeGRQoDF7TjzwA" source="_jIbW8ENPEeGuYNMP4Nz_yg" target="_Om8vkUXDEeGRQoDF7TjzwA"/>
     </shapes>
